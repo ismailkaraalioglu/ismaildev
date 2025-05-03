@@ -1,8 +1,12 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import {
+  IconBrandGithubFilled,
+  IconBrandNextjs,
+  IconBrandVercel,
+} from "@tabler/icons-react";
 
 const navItems = [
-  { href: "/", label: "Readme" },
   { href: "/changelog", label: "Changelog" },
   { href: "/projects", label: "Projects" },
   { href: "/stack", label: "Stack" },
@@ -20,7 +24,7 @@ const Footer = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link key={"/colophon"} href="/colophon">
+              <Link key="/colophon" href="/colophon">
                 Colophon
               </Link>
             </div>
@@ -32,7 +36,7 @@ const Footer = () => {
                   rel="nofollow"
                   className="flex items-center gap-1 dark:hover:text-white"
                 >
-                  Built with N
+                  Built with <IconBrandNextjs className="size-5" />
                 </Link>
                 <Link
                   href="https://www.vercel.com"
@@ -40,15 +44,15 @@ const Footer = () => {
                   rel="nofollow"
                   className="flex items-center gap-1 dark:hover:text-white"
                 >
-                  Deployed on V
+                  Deployed on <IconBrandVercel className="size-4" />
                 </Link>
                 <Link
-                  href="https://github.com/needim/ned.im"
+                  href="https://github.com/ismailkaraalioglu/ismaildev"
                   target="_blank"
                   rel="nofollow"
                   className="flex items-center gap-1 dark:hover:text-white"
                 >
-                  Source on G
+                  Source on <IconBrandGithubFilled className="size-4" />
                 </Link>
                 <div className="grow" />
                 {/* <ThemeToggle hideIndicator /> */}
