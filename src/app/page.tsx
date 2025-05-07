@@ -1,5 +1,7 @@
+import { Fragment } from "react";
 import Link from "next/link";
-import { SOCIALS } from "@/lib/constants";
+import { EXPERIENCES, SOCIALS } from "@/lib/constants";
+import ExperienceCard from "@/components/experience-card";
 
 export default function Home() {
   return (
@@ -28,7 +30,7 @@ export default function Home() {
               target="_blank"
             >
               <social.icon
-                stroke={1}
+                stroke={1.5}
                 size={20}
                 className="text-muted-foreground group-hover:text-primary transition"
               />
@@ -42,91 +44,18 @@ export default function Home() {
       <div className="bg-muted p-2">
         <div className="bg-background flex flex-col rounded-2xl p-6 outline">
           <h2 className="text-3xl">Experience</h2>
-          {/* <p className="text-muted-foreground">
+          <p className="text-muted-foreground">
             I have <span className="font-semibold">5+ years of experience</span>{" "}
-            in software development.
-          </p> */}
-          <div className="group relative py-4">
-            <div className="text-muted-foreground flex items-center justify-between text-xs">
-              <span>İstanbul, Türkiye</span> <span>2021 — Present</span>
-            </div>
-            <div className="mb-1 flex flex-col items-start justify-between gap-2 text-lg text-balance sm:flex-row sm:items-center">
-              <div className="font-medium">
-                Frontend Developer{" "}
-                <span className="text-muted-foreground">at</span> Godot Tech
-              </div>
-            </div>
-            <div className="text-muted-foreground flex flex-col gap-2 text-sm leading-normal sm:gap-3 sm:text-base">
-              I worked as a Full Stack Developer at 90Pixel for two months,
-              after which I accepted an offer from Defter and relocated to
-              Montenegro.
-            </div>
-          </div>
-          <div className="bg-muted h-px w-full" />
-          <div className="group relative py-4">
-            <div className="text-muted-foreground flex items-center justify-between text-xs">
-              <span>İstanbul, Türkiye</span> <span>2021 — Present</span>
-            </div>
-            <div className="mb-1 flex flex-col items-start justify-between gap-2 text-lg text-balance sm:flex-row sm:items-center">
-              <div className="font-medium">
-                Frontend Developer{" "}
-                <span className="text-muted-foreground">at</span> Godot Tech
-              </div>
-            </div>
-            <div className="text-muted-foreground flex flex-col gap-2 text-sm leading-normal sm:gap-3 sm:text-base">
-              I worked as a Full Stack Developer at 90Pixel for two months,
-              after which I accepted an offer from Defter and relocated to
-              Montenegro.
-            </div>
-          </div>
-          <div className="group relative py-4">
-            <div className="text-muted-foreground flex items-center justify-between text-xs">
-              <span>İstanbul, Türkiye</span> <span>2021 — Present</span>
-            </div>
-            <div className="mb-1 flex flex-col items-start justify-between gap-2 text-lg text-balance sm:flex-row sm:items-center">
-              <div className="font-medium">
-                Frontend Developer{" "}
-                <span className="text-muted-foreground">at</span> Godot Tech
-              </div>
-            </div>
-            <div className="text-muted-foreground flex flex-col gap-2 text-sm leading-normal sm:gap-3 sm:text-base">
-              I worked as a Full Stack Developer at 90Pixel for two months,
-              after which I accepted an offer from Defter and relocated to
-              Montenegro.
-            </div>
-          </div>
-          <div className="group relative py-4">
-            <div className="text-muted-foreground flex items-center justify-between text-xs">
-              <span>İstanbul, Türkiye</span> <span>2021 — Present</span>
-            </div>
-            <div className="mb-1 flex flex-col items-start justify-between gap-2 text-lg text-balance sm:flex-row sm:items-center">
-              <div className="font-medium">
-                Frontend Developer{" "}
-                <span className="text-muted-foreground">at</span> Godot Tech
-              </div>
-            </div>
-            <div className="text-muted-foreground flex flex-col gap-2 text-sm leading-normal sm:gap-3 sm:text-base">
-              I worked as a Full Stack Developer at 90Pixel for two months,
-              after which I accepted an offer from Defter and relocated to
-              Montenegro.
-            </div>
-          </div>
-          <div className="group relative py-4">
-            <div className="text-muted-foreground flex items-center justify-between text-xs">
-              <span>İstanbul, Türkiye</span> <span>2021 — Present</span>
-            </div>
-            <div className="mb-1 flex flex-col items-start justify-between gap-2 text-lg text-balance sm:flex-row sm:items-center">
-              <div className="font-medium">
-                Frontend Developer{" "}
-                <span className="text-muted-foreground">at</span> Godot Tech
-              </div>
-            </div>
-            <div className="text-muted-foreground flex flex-col gap-2 text-sm leading-normal sm:gap-3 sm:text-base">
-              I worked as a Full Stack Developer at 90Pixel for two months,
-              after which I accepted an offer from Defter and relocated to
-              Montenegro.
-            </div>
-          </div>
+            building modern, user-focused web and mobile applications.
+          </p>
+          {EXPERIENCES.map((exp, index) => (
+            <Fragment key={exp.id}>
+              <ExperienceCard experience={exp} />
+              {index !== EXPERIENCES.length - 1 && (
+                <div className="bg-muted h-px w-full" />
+              )}
+            </Fragment>
+          ))}
         </div>
       </div>
     </>

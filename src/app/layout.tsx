@@ -37,7 +37,7 @@ export default function RootLayout({
         >
           <div className="mx-auto flex max-w-4xl flex-row">
             <Divider />
-            <main className="flex-1">
+            <main className="flex flex-1 flex-col">
               <Header />
               {children}
               <Footer />

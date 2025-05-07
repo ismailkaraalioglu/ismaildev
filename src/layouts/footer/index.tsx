@@ -10,7 +10,11 @@ const Footer = () => {
           <div className="">
             <div className="text-muted-foreground border-border/50 flex flex-wrap gap-x-6 gap-y-1 border-b px-8 pb-4 text-sm font-medium">
               {FOOTER_NAV_LINKS.map((link) => (
-                <Link key={link.id} href={link.href}>
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  className="text-muted-foreground transition hover:text-zinc-900 dark:hover:text-white"
+                >
                   {link.label}
                 </Link>
               ))}
