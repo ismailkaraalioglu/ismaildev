@@ -17,8 +17,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "İsmail Karaalioğlu",
+  title: {
+    default: "İsmail Karaalioğlu",
+    template: "İsmail Karaalioğlu | %s",
+  },
   description: "Software developer and creator.",
+  // appleWebApp: {
+  //   title: "ismaildev.com",
+  // },
+  // openGraph: {
+  //   title: "İsmail Karaalioğlu",
+  //   description: "Software developer and creator.",
+  //   url: "https://ismaildev.com",
+  //   siteName: "İsmail Karaalioğlu",
+  //   locale: "en_US",
+  //   type: "website",
+  // },
+  // twitter: {
+  //   title: "İsmail Karaalioğlu",
+  //   card: "summary_large_image",
+  // },
 };
 
 export default function RootLayout({

@@ -17,7 +17,7 @@ const ExperienceCard: FC<Props> = ({ experience }) => {
           {experience.company}
         </p>
       </div>
-      <p className="text-muted-foreground flex flex-col gap-2 text-sm leading-normal sm:gap-3 sm:text-base">
+      <p className="text-muted-foreground flex flex-col gap-2 text-sm sm:gap-3 sm:text-base">
         {experience.description}
       </p>
     </div>
