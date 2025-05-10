@@ -50,6 +50,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "https://ismaildev.com",
+  },
   // appleWebApp: {
   //   title: "ismaildev.com",
   // },
