@@ -57,7 +57,7 @@ export const SOCIALS = [
     id: "2",
     href: "https://x.com/ismailldev",
     icon: IconBrandX,
-    label: "1.305 followers",
+    label: "1.360 followers",
   },
   {
     id: "3",
