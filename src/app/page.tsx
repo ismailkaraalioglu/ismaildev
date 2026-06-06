@@ -45,7 +45,7 @@ export default function Home() {
         <div className="bg-background flex flex-col rounded-2xl p-6 outline">
           <h2 className="text-3xl">Experience</h2>
           <p className="text-muted-foreground">
-            I have <span className="font-semibold">5+ years of experience</span>{" "}
+            I have <span className="font-semibold">7+ years of experience</span>{" "}
             building modern, user-focused web and mobile applications.
           </p>
           {EXPERIENCES.map((exp, index) => (
