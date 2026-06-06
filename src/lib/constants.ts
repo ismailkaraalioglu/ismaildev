@@ -71,14 +71,22 @@ export const EXPERIENCES = [
   {
     id: "1",
     title: "Frontend & Mobile Developer",
-    company: "Godot Tech",
-    description:
-      "I’m currently contributing to the development of cross-platform digital products — from web dashboards to mobile and iOS applications — with a focus on performance, usability, and consistency. I work to enhance user experience and engagement by aligning product features with user needs, ensuring seamless functionality across devices through thoughtful design and engineering.",
-    from: "Sep 2024",
+    company: "App Genie",
+    description: "I was responsible for developing the company's mobile and web products.",
+    from: "Dec 2025",
     to: null,
   },
   {
     id: "2",
+    title: "Frontend & Mobile Developer",
+    company: "Godot Tech",
+    description:
+      "I’m currently contributing to the development of cross-platform digital products — from web dashboards to mobile and iOS applications — with a focus on performance, usability, and consistency. I work to enhance user experience and engagement by aligning product features with user needs, ensuring seamless functionality across devices through thoughtful design and engineering.",
+    from: "Sep 2024",
+    to: "Dec 2025",
+  },
+  {
+    id: "3",
     title: "Frontend & Mobile Developer",
     company: "Travel Dynamo",
     description:
@@ -87,7 +95,7 @@ export const EXPERIENCES = [
     to: "Apr 2025",
   },
   {
-    id: "3",
+    id: "4",
     title: "Frontend Developer",
     company: "Key Digital Platform",
     description:
@@ -96,7 +104,7 @@ export const EXPERIENCES = [
     to: "Sep 2024",
   },
   {
-    id: "4",
+    id: "5",
     title: "Frontend Developer",
     company: "masa.tech",
     description:
@@ -105,7 +113,7 @@ export const EXPERIENCES = [
     to: "Oct 2022",
   },
   {
-    id: "5",
+    id: "6",
     title: "Frontend Developer",
     company: "Freelancer",
     description:
