@@ -72,7 +72,7 @@ export const EXPERIENCES = [
     id: "1",
     title: "Frontend & Mobile Developer",
     company: "App Genie",
-    description: "I was responsible for developing the company's mobile and web products.",
+    description: "I'm responsible for developing the company's mobile and web products.",
     from: "Dec 2025",
     to: null,
   },
