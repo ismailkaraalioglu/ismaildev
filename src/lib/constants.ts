@@ -70,7 +70,7 @@ export const SOCIALS = [
 export const EXPERIENCES = [
   {
     id: "1",
-    title: "Frontend & Mobile Developer",
+    title: "Senior Frontend & Mobile Developer",
     company: "App Genie",
     description: "I'm responsible for developing the company's mobile and web products.",
     from: "Dec 2025",
@@ -78,7 +78,7 @@ export const EXPERIENCES = [
   },
   {
     id: "2",
-    title: "Frontend & Mobile Developer",
+    title: "Senior Frontend & Mobile Developer",
     company: "Godot Tech",
     description:
       "I’m currently contributing to the development of cross-platform digital products — from web dashboards to mobile and iOS applications — with a focus on performance, usability, and consistency. I work to enhance user experience and engagement by aligning product features with user needs, ensuring seamless functionality across devices through thoughtful design and engineering.",
