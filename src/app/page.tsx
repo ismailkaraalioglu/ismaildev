@@ -10,7 +10,7 @@ export default function Home() {
         <h1 className="text-4xl tracking-tight sm:text-5xl">
           İsmail Karaalioğlu
           <span className="text-muted-foreground block text-3xl font-extralight text-balance sm:text-4xl">
-            Frontend & Mobile Developer
+            Senior Frontend & Mobile Developer
           </span>
         </h1>
 
